@@ -1,0 +1,26 @@
+*{margin:0; padding:0}
+ul{list-style:none}
+.ir{font-size:0; position:absolute; left:-999999999px; top:-99999999px
+	overflow:hidden; width:0; height:0}
+
+fieldset{border:0 none}
+
+.top_bar{background:url("../../lib/image/search_box.png"); height:41px}
+
+.top_bar .wrap{border:1px red solid; margin:0 auto;
+	width:980px; height:40px;  }
+
+.top_bar fieldset{float:right; line-height:40px;}
+.top_bar .wrap fieldset input[type="text"]{
+	width:260px; line-height:24px;
+	vertical-align:middle;
+	border:0 auto;
+	border-left:1px #666 solid;
+  border-top:1px #666 solid;	
+	margin-right:11px;
+	padding:0 10px
+}
+
+
+
+
