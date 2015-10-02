@@ -1,0 +1,54 @@
+
+*{margin:0; padding:0}
+ul{list-style: none}
+body{background:url("http://static.naver.net/newsstand/img/20121231/bg_bd.png"); font-size:12px;  font-family:dotum, "돋움", arial, hevetica, sans-serif ;  color:#666}
+li>a{text-decoration:none; font-size:14px; font-weight:bold; color:#4B4B4B; letter-spacing:-1px }
+
+.hotcolor{color:red}
+.pointcolor{color:blue}
+
+
+.container{  width:996px; height:560px;  margin:30px auto;   background:url("http://static.naver.net/newsstand/img/20121231/bg_panel.png")no-repeat scroll 50% 0;  }
+.wrap{  overflow:hidden; width:900px; height:560px; padding-top:18px;  margin:0 auto}
+.wrap .top{  width:840px; height:90px; margin:0 auto; border-bottom:3px #545454 solid; position:relative}
+.top .banner{    width:468px; height:60px; position:absolute; right:0; bottom:7px}
+.top .banner img{width:100%}
+.top h3{margin-bottom:6px}
+.top ul li{  float:left;  display:inline-block;  margin-right:3px;  height:22px; line-height:22px}
+.top ul li button{height:22px; font-size:11px; line-height:12px}
+.top p{margin-left:4px}
+
+.main_news{width:840px; height:380px; margin:14px auto}
+.main_news .left_news{ width:610px; height:380px; float:left; overflow: hidden}
+
+.left_news .left_top{border-bottom:1px #E9E9E9 dashed; width:610px; height:112px}
+.left_top p{float:left}
+.left_top h3{margin-left:155px; margin-bottom:7px}
+.left_top div{margin-left:160px}
+.left_top div>a{color:#727272; text-decoration:none; line-height:21px}
+
+.left_sub{border:1px red solid; width:610px; height:270px; position:relative; }
+.left_sub{width:360px; height:270px; }
+.left_sub>ul>li{background:url("http://static.naver.net/newsstand/2015/0915/segye/212452/003.gif")no-repeat;   padding-left:6px;  line-height:32px; }
+.left_sub>ul>li>a{font-size:14px; font-weight:bold; color:#4B4B4B; letter-spacing:-1px }
+
+.box{width: 252px; height: 268px; position:absolute; top:0; right:0; background-color:#EEE; padding-top:14px }
+.box .in_box{width: 102px; height: 109px; float:left; margin-bottom:20px; padding-left:14px }
+.box div{width: 102px; height: 73px;}
+.box div>img{width:100%}
+.box div>a>span{width: 102px; line-height:18px; text-decoration: none; display:inline-block; font-size: 12px; color: #4B4B4B; text-align:center;  letter-spacing: -2px; font-weight: bold;}
+
+
+.main_news .right_news{ float: right; width: 230px; height: 380px; overflow: hidden;}
+.main_news .right_news .hot_title{width: 230px; height: 16px;}
+.main_news .right_news .hot_title img{width:100%}
+.main_news .right_news .hot_body{width: 228px; height: 208px; background-color:#FAFAFA; border-style: none solid; border-color: #E9E9E9; border-width:1px;  }
+.main_news .right_news .hot_body span{letter-spacing:-2px; display:block; font-size:12px; color: #333; text-decoration: none; font-weight:bold; line-height:20px; padding-top:8px }
+.main_news .right_news .hot_body ul{padding:10px}
+.main_news .right_news .hot_body li{height:65px}
+.main_news .right_news .hot_img{width: 79px; height: 55px; margin-right:8px; float:left}
+.main_news .right_news .hot_img img{width:100%}
+
+.right_news .right_bottom{width: 230px; height: 156px; position:relative}
+.right_news .right_bottom img{width:100%}
+.right_news .right_bottom span{font-size:11px; width:230px; height:25px; line-height:24px; position:absolute; bottom:0; right:0; display: block; background:url("http://static.naver.net/newsstand/2015/0920/segye/013058/014.png"); color:#fff; text-align:center; }
