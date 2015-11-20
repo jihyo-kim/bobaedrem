@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* @font-face {
+	font-family: "Flaticon";
+	src: url("../font/flaticon.eot");
+	src: url("../font/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../font/flaticon.woff") format("woff"),
+	url("../font/flaticon.ttf") format("truetype"),
+	url("../font/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* [class^="icon-"]:before, [class*="icon-"]:before,
+[class^="icon-"]:after, [class*="icon-"]:after {
+	font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 20px;
+
+}.icon-logotype42:before {
+	content: "\e000";
+}
+.icon-twitter1:before {
+	content: "\e001";
+}
+.icon-youtube18:before {
+	content: "\e002";
+} */
+
+/*기본설정*/
+html,body{height:100%}/*body영역은 사이즈가 없기에 body를 감싸고 있는*/
+*{margin:0; padding:0; outline: 0;}
+ul,ol{list-style:none}
+img{border:0 none, vertical-align:top;}/*ie 78에서 border 이 생김*/
+fieldset{border:0 none; }/*ie6*/
+legend{position:absolute; left:-9999px; top:-9999px; font-size:0}
+a{text-decoration:none; color:#000}
+
+
+/* header 설정 */
+header{height:100px; box-shadow: 0 2px 6px #999; position:absolute; width:100%}
+header div{padding:0 20px}
+header h1{width:104px; height:50px;
+  background-image: url("http://wondergirls.jype.com/images/logo-s.png") ;
+  padding:25px;
+  background-repeat:no-repeat;
+  background-position:50%;
+  float:left;
+  transition:1s;}
+
+header h1:hover{
+  -moz-transform:scalex(-1);
+  -webkit-transform:scalex(-1);
+}
+header .gnb{float:right; display:block}
+header .gnb li{display:inline-block; transition:200ms}
+header .gnb #mainmenu a{display:inline-block; padding:38px 18px; color:#CD2D4C; font-size:16px;   font-family: "Oswald",sans-serif; transition:200ms; box-sizing:border-box }
+header .gnb #mainmenu a:hover,header .gnb #mainmenu a:focus{color:#404791; padding:41px 18px 34px; box-shadow: inset 0px 3px #404791;}
+
+.section{height:100%; background:url("http://wondergirls.jype.com/images/bg-pc.jpg")no-repeat; background-size:cover; background-position:50% 0px;}
+.section #mainlogo{
+    width:350px;
+    height:250px;
+    margin:0 auto;
+    background:url("http://wondergirls.jype.com/images/mainlogo.png");
+    background-size:cover;
+    position:relative;
+    top: 100px;
+    transition:1s}
+
+.section #mainlogo:hover{
+    transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    opacity:0.9;
+}
+
+header .gnb .btn-menu{display:none}
+
+/*midia 769px start*/
+    @media screen and (max-width:769px){
+
+        header .gnb{
+        z-index: 100%;
+        width:200px;
+        margin-right:-21px;
+        padding-top:55px;
+        }
+
+        header .gnb .btn-menu{
+        display:block;
+        font-family: "Oswald",sans-serif;
+        font-size:14px;
+        line-height:21px;
+        text-align:center;
+        margin-top:-6px;
+        width:200px;
+        padding:20px 0px;
+        border: 0 none;
+        background-color:#cd2d4c;
+        color:#fff;
+        position:absolute;
+        right:0; top:0;
+         }/*mainmenu button */
+
+
+        /*header .gnb ul:target{display:block}*/
+        header .gnb  #mainmenu>li{
+            display:block;
+            line-height:20px;
+            transition:200ms;
+            background-color:rgba(255,255,255,0.2);
+        }
+        header .gnb #mainmenu>li>a{
+            width:100%;
+            height:auto;
+            padding:15px;
+        }
+         header .gnb #mainmenu>li>a:hover{
+             border-left:5px #cd2d4c solid;
+             box-shadow: none;
+             height:auto;
+             padding:15px;
+             background-color:rgba(255,255,255,0.2);
+        }
+
+        .section{
+            background:#eff4ee url("http://wondergirls.jype.com/images/bg-720.jpg");
+            background-repeat:no-repeat;
+            background-size:100%;  /*contain상하를 체움 cover:좌우를 체움*/
+            background-position:50% 50%;
+                }
+
+                .section #mainlogo{
+                width:250px;
+                height:250px;
+                margin:0 auto;
+                background:url("http://wondergirls.jype.com/images/mainlogo.png");
+                background-size:cover;
+                position:relative;
+                top: 20%;
+                transition:1s}
+
+                .section #mainlogo:hover{
+                    trnsform:scale(1.5);
+                    -ms-trnsform:scale(1.5);
+                    -moz-trnsform:scale(1.5);
+                    -webkit-trnsform:scale(1.5);
+                    -o-trnsform:scale(1.5);
+                    opacity:0;
+                }
+        }/*media 569px end*/
+
+footer{background:url("http://wondergirls.jype.com/images/footerbg.png"); height: 57px; position: fixed; bottom:0; width:100%}
+footer .jyplogo>a{position:relative; top: 7px; left:7%; float:left; display: block;  background:url("http://wondergirls.jype.com/images/jyplogo-w.png")no-repeat;text-indent: -99999px; width:115px; height:45px; }
+
+footer .sns_wrap {position:relative; right:7%; top:15px;  float:right;}
+footer .sns_wrap>ul>li{float:left; width:30px; height:30px; margin-left:10px}
+footer .sns_wrap>ul>li:last-child{margin-left:}
+footer .sns_wrap>ul>li>a{display:block;border-radius:5px; width:30px; height:30px;}
+footer .sns_wrap .icon-twitter1>a{display: block; background: #E4E4E4 url("http://wondergirls.jype.com/images/sns/twitter_bird.png")no-repeat center}
+footer .sns_wrap .icon-logotype42>a{display: block; background: #E4E4E4 url("http://wondergirls.jype.com/images/sns/facebook.png")no-repeat center}
+footer .sns_wrap .icon-youtube18>a{display: block; background: #E4E4E4 url("http://wondergirls.jype.com/images/sns/youtube.png")no-repeat center;}
+footer .sns_wrap>ul>li>a>span{display: inline-block; text-indent: -9999px}
