@@ -1,0 +1,16 @@
+/*기본설정*/
+html,body { height:100%}/*body영역은 사이즈가 없기에 body를 감싸고 있는*/
+*{margin:0; padding:0; outline: 0;}
+ul,ol,li {list-style-type: none;}
+a {text-decoration: none; color:#000;}
+img{border:0 none; vertical-align:top;}/*ie 78에서 border 이 생김*/
+fieldset{border:0 none; }/*ie6*/
+legend {text-indent:-9999px; position: absolute; top:-9999px;left:-9999px; font-size:0px; width: 0; height: 0; overflow:hidden;}
+
+.al {text-align:left !important}
+.ac {text-align:center !important}
+.ar {text-align:right !important}
+.fl {float:left !important;}
+.fr {float:right !important;}
+.clearfix:after {display:block; visibility:hidden; clear:both; height:0; content:'';}
+.clearfix {*zoom:1;}

@@ -1,0 +1,24 @@
+.section#gallery {height:100%; width:100%; padding-top:100px; background:#fff; }
+.section#gallery .title {background:#F4F4F4 url(http://wondergirls.jype.com/images/title-gallery.png)no-repeat center; width:100%; height:100px;}
+.section#gallery .photo {max-width:769px; height: 100%; margin: 0 auto; padding: 40px 0; background-size:cover;}
+.section#gallery .photo ul  {font-size:0;}
+.section#gallery .photo ul li{display:inline-block; width:20%; box-sizing:border-box; padding:0.2%;}
+.section#gallery .photo ul li img {width:100%}
+
+
+@media all and (max-width:769px){
+
+     .section#gallery .title { background-size:50%;}
+     .section#gallery .photo {max-width:480px;}
+     .section#gallery .photo ul {}
+     .section#gallery .photo ul li {width:33.33333333333333%;}
+     .section#gallery .photo ul li img {width:100%;}
+}
+@media all and (max-width:480px){
+
+      .section#gallery .title {height:50px; background-size:40%; margin-top:-55px;}
+      .section#gallery .photo {max-width:480px;}
+      .section#gallery .photo ul {}
+      .section#gallery .photo ul li {width:25%;}
+      .section#gallery .photo ul li img {width:100%}
+}

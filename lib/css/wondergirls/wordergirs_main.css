@@ -2,44 +2,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-/* @font-face {
-	font-family: "Flaticon";
-	src: url("../font/flaticon.eot");
-	src: url("../font/flaticon.eot#iefix") format("embedded-opentype"),
-	url("../font/flaticon.woff") format("woff"),
-	url("../font/flaticon.ttf") format("truetype"),
-	url("../font/flaticon.svg") format("svg");
-	font-weight: normal;
-	font-style: normal;
-} */
-
-/* [class^="icon-"]:before, [class*="icon-"]:before,
-[class^="icon-"]:after, [class*="icon-"]:after {
-	font-family: Flaticon;
-    font-size: 20px;
-    font-style: normal;
-    margin-left: 20px;
-
-}.icon-logotype42:before {
-	content: "\e000";
-}
-.icon-twitter1:before {
-	content: "\e001";
-}
-.icon-youtube18:before {
-	content: "\e002";
-} */
-
-/*기본설정*/
-html,body{height:100%}/*body영역은 사이즈가 없기에 body를 감싸고 있는*/
-*{margin:0; padding:0; outline: 0;}
-ul,ol{list-style:none}
-img{border:0 none, vertical-align:top;}/*ie 78에서 border 이 생김*/
-fieldset{border:0 none; }/*ie6*/
-legend{position:absolute; left:-9999px; top:-9999px; font-size:0}
-a{text-decoration:none; color:#000}
-
-
 /* header 설정 */
 header{height:100px; box-shadow: 0 2px 6px #999; position:absolute; width:100%}
 header div{padding:0 20px}
@@ -49,7 +11,7 @@ header h1{width:104px; height:50px;
   background-repeat:no-repeat;
   background-position:50%;
   float:left;
-  transition:1s;}
+  transition:1s; cursor: pointer}
 
 header h1:hover{
   -moz-transform:scalex(-1);
@@ -59,6 +21,8 @@ header .gnb{float:right; display:block}
 header .gnb li{display:inline-block; transition:200ms}
 header .gnb #mainmenu a{display:inline-block; padding:38px 18px; color:#CD2D4C; font-size:16px;   font-family: "Oswald",sans-serif; transition:200ms; box-sizing:border-box }
 header .gnb #mainmenu a:hover,header .gnb #mainmenu a:focus{color:#404791; padding:41px 18px 34px; box-shadow: inset 0px 3px #404791;}
+header .btn-menu{display:none}
+
 
 .section{height:100%; background:url("http://wondergirls.jype.com/images/bg-pc.jpg")no-repeat; background-size:cover; background-position:50% 0px;}
 .section #mainlogo{
@@ -99,8 +63,7 @@ header .gnb .btn-menu{display:none}
         line-height:21px;
         text-align:center;
         margin-top:-6px;
-        width:200px;
-        padding:20px 0px;
+        padding:20px 70px;
         border: 0 none;
         background-color:#cd2d4c;
         color:#fff;
@@ -110,6 +73,18 @@ header .gnb .btn-menu{display:none}
 
 
         /*header .gnb ul:target{display:block}*/
+        header .gnb  .Close{
+            display:none;
+        }
+        header .gnb  .Main{
+            display:block;
+        }
+
+        header .gnb  #mainmenu{
+            display:none;
+
+        }
+
         header .gnb  #mainmenu>li{
             display:block;
             line-height:20px;
@@ -139,12 +114,7 @@ header .gnb .btn-menu{display:none}
                 .section #mainlogo{
                 width:250px;
                 height:250px;
-                margin:0 auto;
-                background:url("http://wondergirls.jype.com/images/mainlogo.png");
-                background-size:cover;
-                position:relative;
-                top: 20%;
-                transition:1s}
+                }
 
                 .section #mainlogo:hover{
                     trnsform:scale(1.5);
@@ -154,16 +124,117 @@ header .gnb .btn-menu{display:none}
                     -o-trnsform:scale(1.5);
                     opacity:0;
                 }
-        }/*media 569px end*/
+        }/*media 769px end*/
 
-footer{background:url("http://wondergirls.jype.com/images/footerbg.png"); height: 57px; position: fixed; bottom:0; width:100%}
-footer .jyplogo>a{position:relative; top: 7px; left:7%; float:left; display: block;  background:url("http://wondergirls.jype.com/images/jyplogo-w.png")no-repeat;text-indent: -99999px; width:115px; height:45px; }
 
-footer .sns_wrap {position:relative; right:7%; top:15px;  float:right;}
-footer .sns_wrap>ul>li{float:left; width:30px; height:30px; margin-left:10px}
-footer .sns_wrap>ul>li:last-child{margin-left:}
-footer .sns_wrap>ul>li>a{display:block;border-radius:5px; width:30px; height:30px;}
-footer .sns_wrap .icon-twitter1>a{display: block; background: #E4E4E4 url("http://wondergirls.jype.com/images/sns/twitter_bird.png")no-repeat center}
-footer .sns_wrap .icon-logotype42>a{display: block; background: #E4E4E4 url("http://wondergirls.jype.com/images/sns/facebook.png")no-repeat center}
-footer .sns_wrap .icon-youtube18>a{display: block; background: #E4E4E4 url("http://wondergirls.jype.com/images/sns/youtube.png")no-repeat center;}
-footer .sns_wrap>ul>li>a>span{display: inline-block; text-indent: -9999px}
+
+    /*media 481px start*/
+    @media screen and (max-width: 481px) {
+
+        header {
+            min-height:40px; height: 40px;
+            box-shadow: 0 1px 7px #3F3F3F;
+            position: absolute;
+            width:100%; transition: 1s;
+        }
+
+        header>div>a>h1{
+            padding: 0; width: 75px; height: 30px;
+            background-image: url("http://wondergirls.jype.com/images/logo-s.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 3px 0 0 10px;
+            transition: 1s;
+        }
+
+         header .gnb{
+        z-index: 100%;
+        width:152px;
+        margin-right:-21px;
+        padding-top:40px;
+        }
+
+        header .gnb .btn-menu{
+        display: block;
+            transition: 1s;
+            line-height: 6px;
+            font-size:14px;
+            display: block;
+            margin-top:-6px;
+            font-family: 'Oswald', sans-serif;
+            text-align:center;
+            padding:20px 45px;
+            border:0 none;
+            background-color: #cd2d4c;
+            color:#FFF;
+            position: absolute;
+            right:0; top:0;
+         }/*mainmenu button */
+
+
+        /*header .gnb ul:target{display:block}*/
+        header .gnb  .Close{
+            display:none;
+        }
+        header .gnb  .Main{
+            display:block;
+        }
+
+        header .gnb  #mainmenu{
+            display:none;
+
+        }
+
+        header .gnb  #mainmenu>li{
+            z-index: 100%;
+            display:block;
+            line-height:15px;
+            transition:200ms;
+            background-color:rgba(255,255,255,0.2);
+        }
+        header .gnb #mainmenu>li>a{
+            width:100%;
+            height:auto;
+            padding:10px;
+        }
+         header .gnb #mainmenu>li>a:hover{
+             border-left:5px #cd2d4c solid;
+             box-shadow: none;
+             height:auto;
+             padding:15px;
+             background-color:rgba(255,255,255,0.2);
+        }
+
+        .section{
+            background:#eff4ee url("http://wondergirls.jype.com/images/bg-720.jpg");
+            background-repeat:no-repeat;
+            background-size:100%;  /*contain상하를 체움 cover:좌우를 체움*/
+            background-position:50% 50%;
+                }
+
+                .section #mainlogo{
+                width:150px;
+                height:150px;
+                }
+
+                .section #mainlogo:hover{
+                    trnsform:scale(2.5);
+                    -ms-trnsform:scale(2.5);
+                    -moz-trnsform:scale(2.5);
+                    -webkit-trnsform:scale(2.5);
+                    -o-trnsform:scale(2.5);
+                    opacity:0;
+                }
+
+
+    }/*media 481px end*/
+
+/* footer 설정 */
+footer {height: 57px; width: 100%; position:fixed; bottom:0; left:0; z-index:10; line-height: 57px;}
+footer .opabg {background: #000; opacity:0.5; width:100%; height:100%;}
+footer address {position:absolute; top:0; left:0; width: 100%; height: 100%; box-sizing: border-box; padding:0 7%;}
+footer address>img {float:left; margin:0.5% 0}
+footer address .sns {float:right}
+footer address .sns li {display:inline-block; width: 30px;height: 30px;background: #ccc; vertical-align: middle; border-radius:5px;}
+footer address .sns li a {display:block; position:absolute; top:0; left:0; width:100%; height:100%; text-indent:-9999px;}
+footer address .sns li:before {position: relative; top:-12px; color:#000; margin-left:6px; }
